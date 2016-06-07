@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#efebe9">
+    <!-- -	Profile
+This menu_item will redirect user to Profile Form.
+-	History
+This menu_item will redirect user to History Form.
+-	About
+This menu_item will redirect user to About Form.
+-	Logout
+This menu_item will be used to logout from this application and redirect user to Login Form.
+-->
+    <item android:id="@+id/profile" android:title="profile"></item>
+    <item android:id="@+id/history" android:title="history"></item>
+    <item android:id="@+id/about" android:title="about"></item>
+    <item android:id="@+id/logout" android:title="logout" android:showAsAction="always"></item>
+</menu>

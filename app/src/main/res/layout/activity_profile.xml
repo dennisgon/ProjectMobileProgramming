@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dennis.project.Profile">
+
+
+
+    <!--edittext username-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsername"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="40dp"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oldtxtPassword"
+        android:layout_below="@+id/fullname"
+        android:hint="Old Password"
+        android:password="true"/>
+    <!--edittext Password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:layout_below="@+id/oldtxtPassword"
+        android:hint="Password"
+        android:password="true"/>
+
+    <!--edittext confirm Password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmPassword"
+        android:layout_below="@+id/txtPassword"
+        android:hint="Confirm Password"
+        android:password="true"/>
+
+    <!--edittext  phone number-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhoneNumber"
+        android:layout_below="@+id/relativeLayoutGender"
+        android:hint="Phone Number"
+        android:phoneNumber="true"/>
+
+    <!--edittext address-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtaddress"
+        android:layout_below="@+id/txtConfirmPassword"
+        android:hint="Address" />
+
+    <!--radio group gender-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtaddress"
+        android:id="@+id/relativeLayoutGender">
+        <!--text Gender-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Gender"
+            android:id="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <!--radibutton male-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/rdrMale"
+                android:paddingRight="30dp"/>
+            <!--radiobutton female-->
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/rdrFemale"
+                android:paddingRight="30dp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <!--button Register-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/btnUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#bcaaa4"/>
+    <!--fullname-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="full name"
+        android:ems="10"
+        android:id="@+id/fullname"
+        android:layout_below="@id/txtUsername" />
+
+</RelativeLayout>
